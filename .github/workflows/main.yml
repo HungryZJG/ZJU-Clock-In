@@ -12,7 +12,7 @@ on:
 jobs:
   ClockIn:
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == 'HungryZJG'
+    if: github.repository.name == 'HungryZJG/ZJU-Clock-In'
     steps:
       - name: Checkout
         uses: actions/checkout@master
